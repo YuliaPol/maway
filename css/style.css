@@ -650,8 +650,11 @@ table {
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
-  line-height: 31px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 12px;
   color: #827777;
+  max-width: 40px;
 }
 
 .main.last-question .content .questions .input-group {

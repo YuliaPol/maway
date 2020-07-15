@@ -39,14 +39,14 @@ jQuery(function ($) {
                 for (var i = 0; i < el.length; i++) {
                     if (el[i].tagName === 'INPUT') {
                         var name = el[i].getAttribute('name');
-                        if (document.querySelectorAll('[name=' + name + ']:checked').length === 0) {
-                            if ($(el[i]).parents('.input-radio-group').find('.show-detail-answer').length > 0) {
-                                if (!$(el[i]).parents('.input-radio-group').find('.show-detail-answer input').val()) {
-                                    erroreArrayElemnts.push(el[i]);
-                                    $('.modal').fadeIn(300);
-                                }
+                        if ($(el[i]).parents('.show-detail-answer').length > 0) {
+                            if (!$(el[i]).parents('.show-detail-answer').find('input[type="text"]').val() && $(el[i]).parents('.show-detail-answer').find('input[type="radio"]').is(':checked')) {
+                                erroreArrayElemnts.push(el[i]);
+                                $('.modal').fadeIn(300);
                             }
-                            else {
+                        }
+                        if (document.querySelectorAll('[name=' + name + ']:checked').length === 0) {
+                            if ($(el[i]).parents('.show-detail-answer').length == 0) {
                                 erroreArrayElemnts.push(el[i]);
                                 $('.modal').fadeIn(300);
                             }
