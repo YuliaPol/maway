@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div class="main bg-blue-aside">
+        <div class="blue-aside"></div>
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row-flex">
+                <div class="picture">
+                    <img src="./img/pictue-1.png" alt="">
+                </div>
+                <div class="question-block">
+                    <form action="one-question.html" class="form-valid">
+                        <p class="question-text">
+                            Как именно, по Вашему мнению, это можно сделать?
+                        </p>    
+                        <div class="input-radio-group">
+                            <div class="input-group">
+                                <input type="radio" name="q-2-3" id="q-2-3-1"  class="show-submit-btn">
+                                <label for="q-2-3-1">Упростить процедуру записи на мероприятие</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="radio" name="q-2-3" id="q-2-3-2" class="show-submit-btn">
+                                <label for="q-2-3-2">Повысить уровень знаний консультантов</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="radio" name="q-2-3" id="q-2-3-3" class="show-submit-btn">
+                                <label for="q-2-3-3">Доработать программу/заменить оборудование</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="radio" name="q-2-3" id="q-2-3-4" class="show-submit-btn">
+                                <label for="q-2-3-4">Разработать новые интересные темы</label>
+                            </div>
+                            <div class="input-group show-detail-answer">
+                                <label for="q-2-3-4">Другое</label>
+                                <div  class="detail-answer">
+                                    <input type="text">
+                                </div>   
+                            </div>
+                        </div>
+                        <div class="btn-left btn-container">
+                            <input type="submit" class="btn-dark valid-form-send" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="modal-error" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="text">
+                <p>Выберете, пожалуйста, ответ.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
