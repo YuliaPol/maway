@@ -307,7 +307,7 @@ table {
                             line-height: 22px;
                             color: #7A7A7A;
                             padding-left: 9px;
-                            max-width: calc(100% - 15px);
+                            max-width: calc(100% - 20px);
                         }
                         .detail-answer {
                             padding-top: 5px;
@@ -445,7 +445,7 @@ table {
                     display: none;
                 }
                 .rating > label {
-                cursor: pointer;
+                    cursor: pointer;
                     width: 30px;
                     height: 30px;
                     margin-top: auto;
@@ -454,6 +454,7 @@ table {
                     background-position: center;
                     background-size: 76%;
                     transition: .3s;
+                    outline: none;
                 }
                 .rating > input:checked ~ label,
                 .rating > input:checked ~ label ~ label {

@@ -389,7 +389,7 @@ table {
   line-height: 22px;
   color: #7A7A7A;
   padding-left: 9px;
-  max-width: calc(100% - 15px);
+  max-width: calc(100% - 20px);
 }
 
 .main .content .row-flex .question-block .input-radio-group .input-group .detail-answer {
@@ -603,6 +603,7 @@ table {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  outline: none;
 }
 
 .main.last-question .content .questions .rating > input:checked ~ label,
