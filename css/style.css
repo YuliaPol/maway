@@ -615,11 +615,50 @@ table {
   background-image: url("./..//img/star-hover.svg");
 }
 
+.main.last-question .content .questions .input-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main.last-question .content .questions .input-row .labels {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main.last-question .content .questions .input-row .labels p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 31px;
+  color: #827777;
+}
+
 .main.last-question .content .questions .input-group {
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 25px;
-  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   border-bottom: 1px solid #E8DFDF;
 }
 
@@ -634,7 +673,10 @@ table {
   font-size: 18px;
   line-height: 31px;
   color: #171616;
-  padding-bottom: 5px;
+}
+
+.main.last-question .content .questions .input-group .text-answer {
+  padding-top: 20px;
 }
 
 .main.last-question .content .questions .input-group .text-answer textarea {
@@ -837,6 +879,21 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .main.last-question .content .questions .input-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .main.last-question {
     padding-top: 15px;
     padding-left: 15px;
@@ -858,7 +915,7 @@ table {
   }
   .main.last-question .content .questions .input-group .question {
     font-size: 15px;
-    line-height: 31px;
+    line-height: 18px;
   }
   .main.last-question .content .buttons .button .btn-prev,
   .main.last-question .content .buttons .button .btn-next {

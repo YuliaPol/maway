@@ -463,11 +463,29 @@ table {
                 .rating > input:not(:checked) ~ label:hover ~ label {
                     background-image: url('./..//img/star-hover.svg');
                 }
+                .input-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .labels {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        p {
+                            font-family: Arial;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 10px;
+                            line-height: 31px;
+                            color: #827777;
+                        }
+                    }
+                }
                 .input-group {
                     padding-left: 25px;
                     padding-right: 25px;    
-                    padding-bottom: 25px;
-                    padding-top: 15px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
                     border-bottom: 1px solid #E8DFDF;
                     &:last-child {
                         border: none;
@@ -479,9 +497,9 @@ table {
                         font-size: 18px;
                         line-height: 31px;
                         color: #171616;
-                        padding-bottom: 5px;
                     }
                     .text-answer {
+                        padding-top: 20px;
                         textarea {
                             background: #F7F7F7;
                             box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -641,6 +659,11 @@ table {
     }
 }
 @media screen and (max-width: 768px) {
+    .main.last-question .content .questions .input-row {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
     .main.last-question {
         padding-top: 15px;
         padding-left: 15px;
@@ -662,7 +685,7 @@ table {
     }
     .main.last-question .content .questions .input-group .question {
         font-size: 15px;
-        line-height: 31px;
+        line-height: 18px;
     }
     .main.last-question .content .buttons .button .btn-prev,
     .main.last-question .content .buttons .button .btn-next {
