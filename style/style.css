@@ -143,7 +143,6 @@ table {
   font-weight: bold;
   font-size: 32px;
   line-height: 36px;
-  letter-spacing: -1.5px;
   color: #2C2C2C;
   max-width: 535px;
   padding-bottom: 40px;
@@ -185,7 +184,6 @@ table {
   font-weight: bold;
   font-size: 46px;
   line-height: 50px;
-  letter-spacing: -1.5px;
   color: #2C2C2C;
   padding-bottom: 70px;
 }
@@ -209,7 +207,6 @@ table {
   font-weight: bold;
   font-size: 30px;
   line-height: 45px;
-  letter-spacing: -1.5px;
   color: #2C2C2C;
   max-width: 560px;
 }
@@ -579,7 +576,6 @@ table {
   font-weight: bold;
   font-size: 30px;
   line-height: 40px;
-  letter-spacing: -1.5px;
   color: #000000;
   padding: 0px;
   padding-bottom: 20px;
@@ -1044,7 +1040,7 @@ table {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 1000;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -1080,7 +1076,6 @@ table {
   font-size: 33px;
   line-height: 45px;
   text-align: center;
-  letter-spacing: -1.5px;
   color: #000000;
 }
 
@@ -1157,6 +1152,13 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .modal-content .text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .main .row-flex .question-block .input-radio-group {
+    padding-bottom: 0px;
+  }
   .main.last-question {
     padding-left: 15px;
     padding-right: 15px;
@@ -1225,7 +1227,6 @@ table {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
-    letter-spacing: -1.5px;
     color: #2C2C2C;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1289,7 +1290,6 @@ table {
     font-size: 25px;
     line-height: 35px;
     text-align: center;
-    letter-spacing: -1.5px;
     color: #2C2C2C;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -1381,7 +1381,7 @@ table {
     left: 0px;
     right: 0px;
     background-image: url(./../img/mobile-bg-min.png);
-    background-position: center;
+    background-position: revert;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
@@ -1416,6 +1416,7 @@ table {
     padding-left: 20px;
     padding-right: 30px;
     padding-top: 30px;
+    padding-bottom: 30px;
     background: rgba(56, 83, 154, 0.9);
     min-height: calc(100vh - 50px - 35px);
   }
@@ -1427,7 +1428,6 @@ table {
     font-weight: bold;
     font-size: 20px;
     line-height: 25px;
-    letter-spacing: -1.5px;
     color: #FFFFFF;
   }
   .main .row-flex .question-block .input-radio-group .input-group label {
@@ -1435,9 +1435,6 @@ table {
     font-size: 17px;
     line-height: 20px;
     color: #FFFFFF;
-  }
-  .main .row-flex .question-block .input-radio-group .input-group {
-    padding-bottom: 30px;
   }
   .main.bg-start .content {
     width: 100%;
@@ -1451,7 +1448,6 @@ table {
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: -1.5px;
     color: #2C2C2C;
   }
   .main.bg-start .question-block .question-text .grey-text {
@@ -1521,7 +1517,6 @@ table {
     font-weight: bold;
     font-size: 20px;
     line-height: 35px;
-    letter-spacing: -1.5px;
     color: #2C2C2C;
     padding-bottom: 30px;
     text-align: center;
@@ -1533,7 +1528,6 @@ table {
     font-size: 25px;
     line-height: 30px;
     text-align: center;
-    letter-spacing: -1.5px;
     color: #2C2C2C;
     padding-bottom: 15px;
     margin: auto;
