@@ -102,7 +102,7 @@ table {
         justify-content: flex-start;
         .picture {
             width: 50%;
-            background-image: url(./../img/bg-main-2.png);
+            background-image: url(./../img/bg-main-2-min.png);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -625,7 +625,7 @@ table {
         padding-left: 45px;
         padding-right: 45px;
         padding-bottom: 30px;
-        background-image: url(./../img/last-question-bg.png);
+        background-image: url(./../img/last-question-bg-min.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -770,7 +770,7 @@ table {
     }
     &.thank-you {
         .picture {
-            background-image: url(./../img/thank-you-bg.png);
+            background-image: url(./../img/thank-you-bg-min.png);
         }
         .content {
             .text {
@@ -906,7 +906,7 @@ table {
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 20px;
-        background-image: url(./../img/mobile-last-question.png);
+        background-image: url(./../img/mobile-last-question-min.png);
     }
     .main.last-question .content {
         padding: 25px 10px;
@@ -959,7 +959,7 @@ table {
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    background-image: url(./../img/one-question-bg-1.png);
+                    background-image: url(./../img/one-question-bg-1-min.png);
                     background-repeat: no-repeat;
                     background-size: 100%;
                     background-position: center;
@@ -983,7 +983,7 @@ table {
                         bottom: 0px;
                         left: 0px;
                         right: 0px;
-                        background-image: url(./../img/one-question-bg-2.png);
+                        background-image: url(./../img/one-question-bg-2-min.png);
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: calc(100% - 15px);
@@ -994,7 +994,7 @@ table {
     }
     .main.bg-start.one-question {
         .picture {
-            background-image: url(./../img/one-question-bg.png);
+            background-image: url(./../img/one-question-bg-min.png);
         }
         .content {
             .text {
@@ -1014,7 +1014,7 @@ table {
                     align-items: center;
                     justify-content: center;
                     position: relative;
-                    background-image: url(./../img/one-question-bg-1.png);
+                    background-image: url(./../img/one-question-bg-1-min.png);
                     background-repeat: no-repeat;
                     background-size: 100%;
                     background-position: center;
@@ -1029,7 +1029,7 @@ table {
                         bottom: 0px;
                         left: 0px;
                         right: 0px;
-                        background-image: url(./../img/one-question-bg-2.png);
+                        background-image: url(./../img/one-question-bg-2-min.png);
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: calc(100% - 15px);
@@ -1070,7 +1070,7 @@ table {
             bottom: 0px;
             left: 0px;
             right: 0px;
-            background-image: url(./../img/mobile-bg.png);
+            background-image: url(./../img/mobile-bg-min.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -1182,7 +1182,7 @@ table {
                 bottom: -700px;
                 left: 0px;
                 right: 0px;
-                background-image: url(./../img/oval-2.png);
+                background-image: url(./../img/oval-2-min.png);
                 background-position: center;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
@@ -1249,10 +1249,10 @@ table {
         padding: 10px 35px;
     }
     .main.bg-blue-aside.question-78 .blue-aside {
-        background-image: url(./../img/mobile-78.png);
+        background-image: url(./../img/mobile-78-min.png);
     }
     .main.bg-blue-aside.question-910 .blue-aside {
-        background-image: url(./../img/mobile-910.png);
+        background-image: url(./../img/mobile-910-min.png);
     }
 }
 @media screen and (max-width: 450px) {
