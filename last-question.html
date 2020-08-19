@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style/style.css">
 
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/script.js"></script>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="content">
-            <p class="top-text">Оцените, пожалуйста, по 5-балльной шкале следующие показатели</p>
+            <p class="top-text">Оцените, пожалуйста, по 5 бальной шкале следующие показатели</p>
             <form action="thank-you.html" class="form-valid">
                 <div class="questions">
                     <div class="input-group input-row">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                     <div class="input-group input-row">
-                        <p class="question">Заинтересованность (вовлеченность) персонала</p>
+                        <p class="question">Заинтересованностье персонала</p>
                         <div class="rating-stars">
                             <div class="rating">
                                 <input type="radio" name="rating-2" id="rating-2-5">
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                     <div class="input-group input-row">
-                        <p class="question">Знание продукции</p>
+                        <p class="question">Знание продукции сотрудниками</p>
                         <div class="rating-stars">
                             <div class="rating">
                                 <input type="radio" name="rating-3" id="rating-3-5">
@@ -111,7 +111,8 @@
                     </div>
                     
                     <div class="input-group input-row">
-                        <p class="question">Уровень соответствия мероприятий моим ожиданиям</p>
+                        <div class="question">Мероприятие, которое я посетил(а), соответствовало моим ожиданиям
+                        </div>
                         <div class="rating-stars">
                             <div class="rating">
                                 <input type="radio" name="rating-5" id="rating-5-5">
@@ -130,10 +131,15 @@
                                 <p>Отлично</p>
                             </div>
                         </div>
+                        <div class="radio-group">
+                            <input type="radio" name="rating-5" id="q-5">
+                            <label for="q-5">Не посещал(а)</label>
+                        </div>
                     </div>
                                         
                     <div class="input-group input-row">
-                        <p class="question">Уровень соответствия Персональной консультации (диагностики) моим ожиданиям</p>
+                        <div class="question">Персональная консультация, которую я посетил(а), соответствовала моим ожиданиям
+                        </div>
                         <div class="rating-stars">
                             <div class="rating">
                                 <input type="radio" name="rating-6" id="rating-6-5">
@@ -151,6 +157,10 @@
                                 <p>Очень плохо</p>
                                 <p>Отлично</p>
                             </div>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="rating-6" id="q-6">
+                            <label for="q-6">Не посещал(а)</label>
                         </div>
                     </div>
 
@@ -197,19 +207,14 @@
                         </div>
                     </div>
                     <div class="input-group">
-                        <p class="question">Что нам еще следует учесть, чтобы повысить уровень сервиса?</p>
+                        <p class="question">Что еще нам следует учесть, чтобы повысить уровень сервиса?</p>
                         <div class="text-answer">
                             <textarea cols="30" rows="10"></textarea>
                         </div>
                     </div>
                 </div>
-                <div class="buttons">
-                    <div class="button">
-                        <a href="one-question.html" class="btn-prev">Назад</a>
-                    </div>
-                    <div class="button">
-                        <input type="submit" class="btn-next valid-form-send" value="Ответить">
-                    </div>
+                <div class="btn-left btn-container">
+                    <input type="submit" class="btn-dark valid-form-send" value="Ответить">
                 </div>
             </form>
         </div>
