@@ -637,6 +637,8 @@ table {
             }
         }
         .content {
+            max-width: 1400px;
+            margin: auto;
             background: rgba(256, 256, 256, 0.9);
             border: 2px solid #B0E5EA;
             box-sizing: border-box;

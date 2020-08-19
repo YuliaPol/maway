@@ -815,6 +815,8 @@ table {
 }
 
 .main.last-question .content {
+  max-width: 1400px;
+  margin: auto;
   background: rgba(255, 255, 255, 0.9);
   border: 2px solid #B0E5EA;
   -webkit-box-sizing: border-box;
