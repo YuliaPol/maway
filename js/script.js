@@ -17,6 +17,34 @@ jQuery(function ($) {
             $(this).parents('.hide-submit-btn').find('.btn-container').fadeIn(300);
         });
 
+        $('.channel-radio input').change(function (e) {
+            if ($(this).is(':checked')) {
+                var detail = '.' + $(this).data('detail');
+                $('.channel-text .text-answer').fadeOut(0);
+                $(detail).fadeIn(300);
+            }
+        });
+
+            // Restricts input for the given textbox to the given inputFilter.
+            function setInputFilter(textbox, inputFilter) {
+                ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+                textbox.on(event, function() {
+                    if (inputFilter(this.value)) {
+                    this.oldValue = this.value;
+                    this.oldSelectionStart = this.selectionStart;
+                    this.oldSelectionEnd = this.selectionEnd;
+                    } else if (this.hasOwnProperty("oldValue")) {
+                    this.value = this.oldValue;
+                    this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                    } else {
+                    this.value = "";
+                    }
+                });
+                });
+            }
+        // Install input filters.
+        setInputFilter($('.sms-answer input'), function(value) {
+            return /^-?\d*$/.test(value); });
 
         var formValid = document.getElementsByClassName('form-valid')[0];
         $('.valid-form-send').click(function () {
@@ -54,6 +82,10 @@ jQuery(function ($) {
                     }
                 }
                 if (erroreArrayElemnts.length == 0) {
+                    console.log($(this).parents('.contact-form'))
+                    if($(this).parents('.contact-form').length > 0){
+                        $(this).parents('.contact-form').fadeOut(300);
+                    }
                     formValid.submit();
                 }
                 if (erroreArrayElemnts.length > 0) {
