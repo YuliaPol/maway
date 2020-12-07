@@ -137,6 +137,13 @@ table {
   padding-bottom: 15px;
 }
 
+.main.bg-start .content .text .small-top.blue-text {
+  color: #38539A;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .main.bg-start .content .text h2 {
   font-family: Arial;
   font-style: normal;
